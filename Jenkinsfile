@@ -4,6 +4,7 @@ pipeline {
         stage('Clone'){
             steps{
                 git 'https://github.com/Marsmallotr/jenkins_docker.git'
+                sh 'cat Dockerfile'
             }
         }
 
