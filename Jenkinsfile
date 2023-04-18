@@ -10,7 +10,7 @@ pipeline {
 
         stage('Build Docker Image'){
             steps {
-                sh 'docker build -f Dockerfile -t simple_docker .'
+                sh 'docker build -t simple_docker .'
             }
         }
 
