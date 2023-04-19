@@ -10,7 +10,7 @@ pipeline {
 
         stage('Build Docker Image'){
             steps {
-                sh 'docker build --add-host=docker:192.168.1.65 -t simple_docker .'
+                sh 'docker build -t simple_docker .'
             }
         }
 
